@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7C08143D2140605800CF401C /* Layoutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C08143B2140605800CF401C /* Layoutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C081444214060D900CF401C /* UIView+Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C081443214060D900CF401C /* UIView+Layoutable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C0814382140605700CF401C /* Layoutable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Layoutable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C08143B2140605800CF401C /* Layoutable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Layoutable.h; sourceTree = "<group>"; };
 		7C08143C2140605800CF401C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C081443214060D900CF401C /* UIView+Layoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layoutable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		7C08143A2140605700CF401C /* Layoutable */ = {
 			isa = PBXGroup;
 			children = (
+				7C081443214060D900CF401C /* UIView+Layoutable.swift */,
 				7C08143B2140605800CF401C /* Layoutable.h */,
 				7C08143C2140605800CF401C /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					7C0814372140605700CF401C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C081444214060D900CF401C /* UIView+Layoutable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		7C0814412140605800CF401C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.kwiecien.Layoutable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		7C0814422140605800CF401C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
