@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.authors = { 'Michał Kwiecień' => 'michal@kwiecien.co' }
   spec.source = { git: 'https://github.com/MichalTKwiecien/Layoutable.git', tag: spec.version.to_s }
 
-  spec.source_files = 'layoutable/**/*.swift'
+  spec.source_files = 'Layoutable/**/*.swift'
 
   spec.requires_arc = true
   spec.frameworks = 'UIKit'
