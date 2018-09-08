@@ -4,7 +4,7 @@
 
 **Layoutable** is an extension for UIView apps that make use of AutoLayout easier.
 This framework doesn't replace any existing AutoLayout API available in UIKit. Anchor API is very good
-and easy to use, but sometimes require a lot of code repetition for common tasks. This framework only adds a couple of useful extensions. You can check the implementation in just [one single file](https://github.com/MichalTKwiecien/Layoutable/blob/develop/Layoutable/UIView%2BLayoutable.swift).
+and easy to use, but sometimes require a lot of code repetition for common tasks. This framework only adds a couple of useful extensions. You can check the implementation in just [one single file](https://github.com/MichalTKwiecien/Layoutable/blob/master/Layoutable/UIView%2BLayoutable.swift).
 
 ## Usage & features
 
@@ -12,7 +12,7 @@ and easy to use, but sometimes require a lot of code repetition for common tasks
   <img src="Images/iPhoneX-Layoutable.jpg">
 </p>
 
-Here's how the code would look like when constraining the screen above. See the [example](https://github.com/MichalTKwiecien/Layoutable/Example/ViewController.swift) for the full version.
+Here's how the code would look like when constraining the screen above. See the [example](https://github.com/MichalTKwiecien/Layoutable/blob/master/Example/ViewController.swift) for the full version.
 
 ### Just UIKit
 
@@ -121,4 +121,4 @@ pod 'Layoutable', '~> {version}'
 
 ### Manually
 
-You can just drag and drop [single file](https://github.com/MichalTKwiecien/Layoutable/Layoutable/UIView%2BLayoutable.swift) to your project.
+You can just drag and drop [single file](https://github.com/MichalTKwiecien/Layoutable/blob/master/Layoutable/UIView%2BLayoutable.swift) to your project.
