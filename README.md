@@ -2,8 +2,8 @@
 ![](https://img.shields.io/badge/carthage-compatible-green.svg)
 ![](https://img.shields.io/badge/cocoapods-compatible-green.svg)
 
-**Layoutable** is an extension for UIView apps that make use of AutoLayout easier.
-This framework doesn't replace any existing AutoLayout API available in UIKit. Anchor API is very good
+**Layoutable** is an extension for UIView apps that make use of Auto Layout easier.
+This framework doesn't replace any existing Auto Layout API available in UIKit. Anchor API is very good
 and easy to use, but sometimes require a lot of code repetition for common tasks. This framework only adds a couple of useful extensions. You can check the implementation in just [one single file](https://github.com/MichalTKwiecien/Layoutable/blob/master/Layoutable/UIView%2BLayoutable.swift).
 
 ## Usage & features
@@ -91,8 +91,8 @@ final class ViewController: UIViewController {
 }
 ```
 
-### Detecting if view can be used with AutoLayout
-For all of the views that you want to use with AutoLayout you have to type
+### Detecting if view can be used with Auto Layout
+For all of the views that you want to use with Auto Layout you have to type
 `translatesAutoresizingMaskIntoConstraints = false`.
 It's very easy to forget and have a lot of conflicts after running your app.
 Layoutable checks for this situation and informs you how to fix it.
