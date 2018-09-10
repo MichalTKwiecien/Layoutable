@@ -26,3 +26,6 @@ playground.xcworkspace
 
 .idea
 *.iml
+
+Pods
+Carthage

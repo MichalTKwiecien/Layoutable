@@ -26,9 +26,39 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7C0814372140605700CF401C"
+            BuildableName = "Layoutable.framework"
+            BlueprintName = "Layoutable"
+            ReferencedContainer = "container:Layoutable.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7C492CFD2146C658004BC9E5"
+               BuildableName = "LayoutableTests.xctest"
+               BlueprintName = "LayoutableTests"
+               ReferencedContainer = "container:Layoutable.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7C0814372140605700CF401C"
+            BuildableName = "Layoutable.framework"
+            BlueprintName = "Layoutable"
+            ReferencedContainer = "container:Layoutable.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

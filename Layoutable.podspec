@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.summary = 'Extension for UIView apps that make use of AutoLayout easier.'
   spec.homepage = 'https://github.com/MichalTKwiecien/Layoutable'
 
-  spec.license = { type: 'MIT', file: 'LICENSE' }
+  spec.license = { type: 'MIT', file: 'LICENSE.md' }
   spec.authors = { 'Michał Kwiecień' => 'michal@kwiecien.co' }
   spec.source = { git: 'https://github.com/MichalTKwiecien/Layoutable.git', tag: spec.version.to_s }
 

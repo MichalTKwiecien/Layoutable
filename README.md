@@ -122,3 +122,16 @@ pod 'Layoutable', '~> {version}'
 ### Manually
 
 You can just drag and drop [single file](https://github.com/MichalTKwiecien/Layoutable/blob/master/Layoutable/UIView%2BLayoutable.swift) to your project.
+
+## Contributing
+
+Development requires following tools:
+
+- **[Xcode](https://developer.apple.com/xcode/) 9.4** with **Swift 4.1**,
+- **[Carthage](https://github.com/Carthage/Carthage) 0.3** or higher.
+
+After cloning the repository, install project's dependencies:
+
+```sh
+$ carthage bootstrap --platform iOS
+```
