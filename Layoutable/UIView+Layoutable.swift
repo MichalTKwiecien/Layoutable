@@ -12,21 +12,21 @@ public extension UIView {
     /// Anchor of the view.
     enum Anchor {
         case top
-        case right
+        case trailing
         case bottom
-        case left
+        case leading
     }
 
-    /// Returns view with the same type that can be used with AutoLayout.
+    /// Returns view with the same type that can be used with Auto Layout.
     ///
-    /// - Returns: Prepared view for AutoLayout.
+    /// - Returns: Prepared view for Auto Layout.
     func layoutable() -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         return self
     }
 
     private func assertLayoutability(_ view: UIView) {
-        assert(!view.translatesAutoresizingMaskIntoConstraints, "You are trying to use AutoLayout with `translatesAutoresizingMaskIntoConstraints` set to true for one of your views. Doing so would lead to constraint conflicts. Use `layoutable()` method to convert the view to the layoutable form.")
+        assert(!view.translatesAutoresizingMaskIntoConstraints, "You are trying to use Auto Layout with `translatesAutoresizingMaskIntoConstraints` set to true for one of your views. Doing so would lead to constraint conflicts. Use `layoutable()` method to convert the view to the layoutable form.")
     }
 
     /// Constrain edges of the view to its superview edges.
@@ -52,14 +52,14 @@ public extension UIView {
         var constraints = [NSLayoutConstraint]()
         if let excludedAnchors = excludedAnchors {
             if !excludedAnchors.contains(.top) { constraints.append(topAnchor.constraint(equalTo: view.topAnchor, constant: insets.top)) }
-            if !excludedAnchors.contains(.right) { constraints.append(rightAnchor.constraint(equalTo: view.rightAnchor, constant: -insets.right)) }
+            if !excludedAnchors.contains(.trailing) { constraints.append(trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -insets.right)) }
             if !excludedAnchors.contains(.bottom) { constraints.append(bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -insets.bottom)) }
-            if !excludedAnchors.contains(.left) { constraints.append(leftAnchor.constraint(equalTo: view.leftAnchor, constant: insets.left)) }
+            if !excludedAnchors.contains(.leading) { constraints.append(leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.left)) }
         } else {
             constraints = [
                 topAnchor.constraint(equalTo: view.topAnchor, constant: insets.top),
-                leftAnchor.constraint(equalTo: view.leftAnchor, constant: insets.left),
-                rightAnchor.constraint(equalTo: view.rightAnchor, constant: -insets.right),
+                leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.left),
+                trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -insets.right),
                 bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -insets.bottom)
             ]
         }
@@ -92,14 +92,14 @@ public extension UIView {
             let layoutGuide = view.safeAreaLayoutGuide
             if let excludedAnchors = excludedAnchors {
                 if !excludedAnchors.contains(.top) { constraints.append(topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: insets.top)) }
-                if !excludedAnchors.contains(.right) { constraints.append(rightAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -insets.right)) }
+                if !excludedAnchors.contains(.trailing) { constraints.append(trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor, constant: -insets.right)) }
                 if !excludedAnchors.contains(.bottom) { constraints.append(bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -insets.bottom)) }
-                if !excludedAnchors.contains(.left) { constraints.append(leftAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: insets.left)) }
+                if !excludedAnchors.contains(.leading) { constraints.append(leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: insets.left)) }
             } else {
                 constraints = [
                     topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: insets.top),
-                    leftAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: insets.left),
-                    rightAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -insets.right),
+                    leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: insets.left),
+                    trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor, constant: -insets.right),
                     bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -insets.bottom)
                 ]
             }
