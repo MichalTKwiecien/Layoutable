@@ -13,7 +13,21 @@
 		7C08145321406B6200CF401C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C08145221406B6200CF401C /* Assets.xcassets */; };
 		7C08145621406B6200CF401C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C08145421406B6200CF401C /* LaunchScreen.storyboard */; };
 		7C08145C214072EE00CF401C /* Layoutable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0814382140605700CF401C /* Layoutable.framework */; };
+		7C2869392146CC570008885A /* LayoutableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2869382146CC570008885A /* LayoutableSpec.swift */; };
+		7C28693C2146CD450008885A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C28693A2146CD450008885A /* Nimble.framework */; };
+		7C28693D2146CD450008885A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C28693B2146CD450008885A /* Quick.framework */; };
+		7C492D032146C658004BC9E5 /* Layoutable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0814382140605700CF401C /* Layoutable.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C492D042146C658004BC9E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C08142F2140605700CF401C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C0814372140605700CF401C;
+			remoteInfo = Layoutable;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7C0814382140605700CF401C /* Layoutable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Layoutable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +39,16 @@
 		7C08145221406B6200CF401C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C08145521406B6200CF401C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C08145721406B6200CF401C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C2869322146C7920008885A /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		7C2869332146C7920008885A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7C2869342146C7920008885A /* Layoutable.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Layoutable.podspec; sourceTree = "<group>"; };
+		7C2869352146CA6F0008885A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7C2869382146CC570008885A /* LayoutableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutableSpec.swift; sourceTree = "<group>"; };
+		7C28693A2146CD450008885A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		7C28693B2146CD450008885A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		7C492CFE2146C658004BC9E5 /* LayoutableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C492D022146C658004BC9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C492D092146C6E8004BC9E5 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,14 +67,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C492CFB2146C658004BC9E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C492D032146C658004BC9E5 /* Layoutable.framework in Frameworks */,
+				7C28693C2146CD450008885A /* Nimble.framework in Frameworks */,
+				7C28693D2146CD450008885A /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7C08142E2140605700CF401C = {
 			isa = PBXGroup;
 			children = (
+				7C492D0A2146C6EF004BC9E5 /* Supporting Files */,
 				7C08143A2140605700CF401C /* Layoutable */,
 				7C08144A21406B6100CF401C /* Example */,
+				7C492CFF2146C658004BC9E5 /* LayoutableTests */,
 				7C0814392140605700CF401C /* Products */,
 				7C08145B214072EE00CF401C /* Frameworks */,
 			);
@@ -61,6 +97,7 @@
 			children = (
 				7C0814382140605700CF401C /* Layoutable.framework */,
 				7C08144921406B6100CF401C /* Example.app */,
+				7C492CFE2146C658004BC9E5 /* LayoutableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,8 +126,39 @@
 		7C08145B214072EE00CF401C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C28693A2146CD450008885A /* Nimble.framework */,
+				7C28693B2146CD450008885A /* Quick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C2869372146CC060008885A /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				7C2869382146CC570008885A /* LayoutableSpec.swift */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		7C492CFF2146C658004BC9E5 /* LayoutableTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C2869372146CC060008885A /* Specs */,
+				7C492D022146C658004BC9E5 /* Info.plist */,
+			);
+			path = LayoutableTests;
+			sourceTree = "<group>";
+		};
+		7C492D0A2146C6EF004BC9E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C2869352146CA6F0008885A /* .gitignore */,
+				7C492D092146C6E8004BC9E5 /* Cartfile.private */,
+				7C2869342146C7920008885A /* Layoutable.podspec */,
+				7C2869322146C7920008885A /* LICENSE.md */,
+				7C2869332146C7920008885A /* README.md */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +209,25 @@
 			productReference = 7C08144921406B6100CF401C /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7C492CFD2146C658004BC9E5 /* LayoutableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C492D082146C658004BC9E5 /* Build configuration list for PBXNativeTarget "LayoutableTests" */;
+			buildPhases = (
+				7C492CFA2146C658004BC9E5 /* Sources */,
+				7C492CFB2146C658004BC9E5 /* Frameworks */,
+				7C492CFC2146C658004BC9E5 /* Resources */,
+				7C2869362146CAFF0008885A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C492D052146C658004BC9E5 /* PBXTargetDependency */,
+			);
+			name = LayoutableTests;
+			productName = LayoutableTests;
+			productReference = 7C492CFE2146C658004BC9E5 /* LayoutableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,6 +244,10 @@
 					};
 					7C08144821406B6100CF401C = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					7C492CFD2146C658004BC9E5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -175,6 +266,7 @@
 			targets = (
 				7C0814372140605700CF401C /* Layoutable */,
 				7C08144821406B6100CF401C /* Example */,
+				7C492CFD2146C658004BC9E5 /* LayoutableTests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,7 +288,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C492CFC2146C658004BC9E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C2869362146CAFF0008885A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C0814332140605700CF401C /* Sources */ = {
@@ -216,7 +333,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C492CFA2146C658004BC9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C2869392146CC570008885A /* LayoutableSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C492D052146C658004BC9E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C0814372140605700CF401C /* Layoutable */;
+			targetProxy = 7C492D042146C658004BC9E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7C08145421406B6200CF401C /* LaunchScreen.storyboard */ = {
@@ -445,6 +578,55 @@
 			};
 			name = Release;
 		};
+		7C492D062146C658004BC9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = LayoutableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.kwiecien.Layoutable.LayoutableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C492D072146C658004BC9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = LayoutableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.kwiecien.Layoutable.LayoutableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,6 +653,15 @@
 			buildConfigurations = (
 				7C08145821406B6200CF401C /* Debug */,
 				7C08145921406B6200CF401C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C492D082146C658004BC9E5 /* Build configuration list for PBXNativeTarget "LayoutableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C492D062146C658004BC9E5 /* Debug */,
+				7C492D072146C658004BC9E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
